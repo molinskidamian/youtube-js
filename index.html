@@ -27,13 +27,15 @@
 				</label>
 			</div>
 			<header class="main-header">
-				<i class="fa-solid fa-bars"></i>
-				<i class="fa-brands fa-youtube"></i>
-				<form action="">
+				<div class="main-header--logo">
+					<i class="fa-solid fa-bars switch-menu"></i>
+					<i class="logo fa-brands fa-youtube"></i>
+				</div>
+				<form class="main-header-search" action="">
 					<input type="search" placeholder="Szukaj" />
 					<i class="fa-solid fa-keyboard"></i>
-					<i class="fa-solid fa-magnifying-glass"></i>
-					<i class="fa-solid fa-microphone"></i>
+					<button class="fa-solid fa-magnifying-glass"></button>
+					<button class="fa-solid fa-microphone"></button>
 				</form>
 				<div class="user-menu">
 					<i class="fa-solid fa-video"></i>
@@ -46,42 +48,100 @@
 				<ul class="vertical--menu">
 					<li class="vartical--item">
 						<a href="#" class="vertical--link"
-							><i class="fa-solid fa-house"></i><span>Główna</span></a
+							><i class="icon fa-solid fa-house"></i
+							><span class="vertical-nav--description">Główna</span></a
 						>
 					</li>
 					<li class="vartical--item">
 						<a href="#" class="vertical--link"
-							><i class="fa-solid fa-compass"></i><span>Odkrywaj</span></a
+							><i class="icon fa-solid fa-compass"></i
+							><span class="vertical-nav--description">Odkrywaj</span></a
 						>
 					</li>
 					<li class="vartical--item">
 						<a href="#" class="vertical--link"
-							><i class="fa-brands fa-avianex"></i><span>Shorts</span></a
+							><i class="icon fa-brands fa-avianex"></i
+							><span class="vertical-nav--description">Shorts</span></a
 						>
 					</li>
 					<li class="vartical--item">
 						<a href="#" class="vertical--link"
-							><i class="fa-brands fa-buffer"></i><span>Subskrypcje</span></a
+							><i class="icon fa-brands fa-buffer"></i
+							><span class="vertical-nav--description">Subskrypcje</span></a
 						>
 					</li>
 					<li class="vartical--item">
 						<a href="#" class="vertical--link"
-							><i class="fa-brands fa-youtube"></i><span>Originals</span></a
+							><i class="icon fa-brands fa-youtube"></i
+							><span class="vertical-nav--description">Originals</span></a
 						>
 					</li>
 					<li class="vartical--item">
 						<a href="#" class="vertical--link"
-							><i class="fa-solid fa-music"></i><span>YouTube Music</span></a
+							><i class="icon fa-solid fa-music"></i
+							><span class="vertical-nav--description">YouTube Music</span></a
 						>
 					</li>
 					<li class="vartical--item">
 						<a href="#" class="vertical--link"
-							><i class="fa-solid fa-server"></i><span>Biblioteka</span></a
+							><i class="icon fa-solid fa-server"></i
+							><span class="vertical-nav--description">Biblioteka</span></a
 						>
 					</li>
 					<li class="vartical--item">
 						<a href="#" class="vertical--link"
-							><i class="fa-solid fa-arrow-down-long"></i><span>Pobierz</span></a
+							><i class="icon fa-solid fa-arrow-down-long"></i
+							><span class="vertical-nav--description">Pobierz</span></a
+						>
+					</li>
+				</ul>
+				<ul class="vertical--menu">
+					<li class="vartical--item">
+						<a href="#" class="vertical--link"
+							><i class="icon fa-solid fa-house"></i
+							><span class="vertical-nav--description">Biblioteka</span></a
+						>
+					</li>
+					<li class="vartical--item">
+						<a href="#" class="vertical--link"
+							><i class="icon fa-solid fa-compass"></i
+							><span class="vertical-nav--description">Historia</span></a
+						>
+					</li>
+					<li class="vartical--item">
+						<a href="#" class="vertical--link"
+							><i class="icon fa-brands fa-avianex"></i
+							><span class="vertical-nav--description">Twoje filmy</span></a
+						>
+					</li>
+					<li class="vartical--item">
+						<a href="#" class="vertical--link"
+							><i class="icon fa-brands fa-buffer"></i
+							><span class="vertical-nav--description">Do obejrzenia</span></a
+						>
+					</li>
+					<li class="vartical--item">
+						<a href="#" class="vertical--link"
+							><i class="icon fa-brands fa-youtube"></i
+							><span class="vertical-nav--description">Pobrane</span></a
+						>
+					</li>
+					<li class="vartical--item">
+						<a href="#" class="vertical--link"
+							><i class="icon fa-solid fa-music"></i
+							><span class="vertical-nav--description">Polubione filmy</span></a
+						>
+					</li>
+					<li class="vartical--item">
+						<a href="#" class="vertical--link"
+							><i class="icon fa-solid fa-server"></i
+							><span class="vertical-nav--description">Pokaż więcej</span></a
+						>
+					</li>
+					<li class="vartical--item">
+						<a href="#" class="vertical--link"
+							><i class="icon fa-solid fa-arrow-down-long"></i
+							><span class="vertical-nav--description">Pobierz</span></a
 						>
 					</li>
 				</ul>
@@ -118,5 +178,6 @@
 		</div>
 		<script src="./js/app.js"></script>
 		<script src="./js/darkTheme.js"></script>
+		<script src="./js/vertical-nav.js"></script>
 	</body>
 </html>
