@@ -39,7 +39,7 @@ body {
 }
 
 .wrapper {
-	width: 100vw;
+	max-width: 100vw;
 	height: 100%;
 	display: grid;
 	grid-template-areas:
@@ -135,6 +135,9 @@ body {
 .main-header--logo {
 	display: flex;
 	align-items: center;
+	/* justify-content: ; */
+	/* outline: 1px dashed red; */
+	padding-left: 2.5rem;
 }
 
 .main-header--logo > i:nth-child(2) {
@@ -189,6 +192,59 @@ body {
 	height: 2.5rem;
 	border: none;
 	margin-left: 0.5rem;
+}
+
+.user-menu {
+	display: flex;
+	justify-content: center;
+	/* outline: 1px dashed red; */
+}
+
+.user-menu-icon {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	width: 4rem;
+	height: 2.5rem;
+	/* outline: 1px dashed blue; */
+}
+
+.user-menu-icon > i {
+	display: block;
+	margin: auto;
+	/* outline: 1px dashed red; */
+}
+
+.user-menu-icon > i:hover + .tooltip--hidden {
+	opacity: 1;
+}
+
+.tooltip-description {
+	font-size: 0.9rem;
+}
+
+.tooltip--hidden {
+	opacity: 0;
+	position: absolute;
+	bottom: -3rem;
+	background-color: rgba(56, 56, 56, 0.7);
+	padding: 0.4rem 0.8rem;
+	/* display: none; */
+}
+
+.user-menu > * {
+	font-size: 1.2rem;
+	padding-right: 1rem;
+}
+
+.user-menu .fa-video {
+	/* position: relative; */
+}
+
+.tooltip-header {
+	/* position: absolute; */
+	/* top: 3rem; */
 }
 
 .vertical-nav {
