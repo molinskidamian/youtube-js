@@ -247,6 +247,10 @@ body {
 	/* top: 3rem; */
 }
 
+.content {
+	width: 100%;
+}
+
 .vertical-nav {
 	grid-area: verticalMenu;
 }
@@ -291,4 +295,34 @@ body {
 }
 
 .vertical-nav--onlyIcons {
+}
+
+.content .meta-list {
+	border-bottom: 1px solid var(--border-color);
+	margin-bottom: 0.5rem;
+}
+
+.content .meta-menu {
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+}
+
+.content .meta-item {
+	/* outline: 1px dashed red; */
+	margin: 1rem 0;
+}
+
+.content .meta-link {
+	background-color: var(--link-bg-hover-color);
+	color: var(--link-color);
+	padding: 0.5rem 1rem;
+	border-radius: 1rem;
+	border: 1px solid var(--border-color);
+	text-decoration: none;
+}
+
+.content .meta-link:hover {
+	background-color: var(--link-bg-hover-color);
+	color: var(--link-hover);
 }
