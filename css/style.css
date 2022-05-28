@@ -247,12 +247,9 @@ body {
 	/* top: 3rem; */
 }
 
-.content {
-	width: 100%;
-}
-
 .vertical-nav {
 	grid-area: verticalMenu;
+	width: 20vw;
 }
 
 .vertical-nav--hidden {
@@ -297,20 +294,28 @@ body {
 .vertical-nav--onlyIcons {
 }
 
+.content {
+	width: 80vw;
+	/* outline: 1px dashed red; */
+	padding: 1rem;
+}
+
 .content .meta-list {
 	border-bottom: 1px solid var(--border-color);
 	margin-bottom: 0.5rem;
+	/* outline: 1px dashed red; */
 }
 
 .content .meta-menu {
 	display: flex;
 	list-style: none;
 	justify-content: space-between;
+	align-items: center;
 }
 
 .content .meta-item {
 	/* outline: 1px dashed red; */
-	margin: 1rem 0;
+	margin: 0.6rem 0;
 }
 
 .content .meta-link {
@@ -325,4 +330,9 @@ body {
 .content .meta-link:hover {
 	background-color: var(--link-bg-hover-color);
 	color: var(--link-hover);
+}
+
+.content .meta-submenu {
+	display: flex;
+	list-style: none;
 }
