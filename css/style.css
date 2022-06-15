@@ -304,18 +304,26 @@ body {
 	border-bottom: 1px solid var(--border-color);
 	margin-bottom: 0.5rem;
 	/* outline: 1px dashed red; */
+	/* background: orange; */
+	width: 100%;
 }
 
 .content .meta-menu {
 	display: flex;
 	list-style: none;
-	justify-content: space-between;
+	/* justify-content: space-between; */
 	align-items: center;
+	width: 100%;
 }
 
 .content .meta-item {
 	/* outline: 1px dashed red; */
 	margin: 0.6rem 0;
+}
+
+.content .meta-menu>.meta-item:nth-child(2) {
+	background-color: yellow;
+	width: 100%;
 }
 
 .content .meta-link {
@@ -333,8 +341,12 @@ body {
 }
 
 .content .meta-submenu {
+	width: 100%;
 	display: flex;
+	justify-content: space-around;
 	list-style: none;
+	outline: 1px dashed red;
+
 }
 
 .content .cards-wrapper {
